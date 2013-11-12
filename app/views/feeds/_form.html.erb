@@ -1,0 +1,34 @@
+<%= form_for @feed, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :url, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :url, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :feed_url, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :feed_url, :class => 'text_field' %>
+    </div>
+  </div>
+
+    <div class="control-group">
+      <%= f.label :last_modified, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :last_modified, 'data-behaviour' => 'datepicker' ,:class => 'span2' %><span class="add-on"><i class="icon-th"></i></span>
+      </div>
+    </div>
+
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                feeds_path, :class => 'btn' %>
+  </div>
+<% end %>

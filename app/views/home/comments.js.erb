@@ -1,0 +1,8 @@
+$modal = $('#modal-comments'),
+$modalBody = $('#modal-comments .modal-body'),
+$modalHeading = $('#modal-comments .modal-heading');
+$modal.css({width: '900px', height: '800px'});
+$modalHeading.html("<%= @article.title %>");
+$modalBody.html('<iframe width="100%" height="98%" frameborder="0" allowtransparency="true" src="<%= url_for :action => 'render_comments', :id => @article.id %>"></iframe>');
+$modalBody.css({width: '96%', height: '750px', overflow: 'hidden'});
+$modal.modal();
