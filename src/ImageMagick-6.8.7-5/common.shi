@@ -1,0 +1,21 @@
+# Test environment
+top_srcdir='/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5'
+top_builddir='/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5'
+
+set -a
+COMPARE="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/utilities/compare"
+COMPOSITE="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/utilities/composite"
+CONJURE="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/utilities/conjure"
+CONVERT="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/utilities/convert"
+DISPLAY="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/utilities/display"
+IDENTIFY="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/utilities/identify"
+MONTAGE="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/utilities/montage" 
+VALIDATE="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/tests/validate"
+DRAWTEST="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/tests/drawtest"
+WANDTEST="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/tests/wandtest"
+LD_LIBRARY_PATH="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/magick/.libs:${LD_LIBRARY_PATH}"
+MAGICK_CODER_MODULE_PATH="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/coders"
+MAGICK_CONFIGURE_PATH="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/config:/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/config"
+MAGICK_FILTER_MODULE_PATH="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/filters"
+PATH="/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/utilities:/home/denisra/webapps/news_portal/portal/src/ImageMagick-6.8.7-5/tests:${PATH}"
+set +a
