@@ -1,12 +1,17 @@
-set :application, 'news_portal'
+set :application, 'portal'
 set :repo_url, 'git@bitbucket.org:denisra/news_portal.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
- set :deploy_to, '/home/denisra/webapps/news_portal'
+ set :deploy_to, '/home/denisra/webapps/portal'
  set :scm, :git
  set :verbose_command_log, true
  set :use_sudo, false
+
+
+# bundler settings:
+set :bundle_without, %w{production test}.join(' ')
+
 
 # set :format, :pretty
 # set :log_level, :debug
@@ -23,7 +28,7 @@ set :default_env, {
     "GEM_HOME"  =>  "#{deploy_to}/gems",
     "RAILS_ENV" =>  "development"
 }
-# set :keep_releases, 5
+set :keep_releases, 5
 
 
 
@@ -60,12 +65,12 @@ namespace :deploy do
     end
   end
 
-  desc "Bundle install gems"
-  task :bundle do
-    on roles(:app) do
-      execute "cd #{deploy_to}/current; bundle install --deployment"
-    end
-  end
+#  desc "Bundle install gems"
+#  task :bundle do
+#    on roles(:app), in: :sequence, wait: 5 do
+#      execute "cd #{deploy_to}/current; bundle install --deployment"
+#    end
+#  end
 
   desc "Restart nginx"
   task :restart do
@@ -101,7 +106,7 @@ end
 
 
 
-after "deploy", "deploy:bundle"
+#after "deploy", "deploy:bundle"
 after "deploy", "deploy:assets:precompile"
 after "deploy", "deploy:migrate"
 after "deploy", "deploy:cleanup"
