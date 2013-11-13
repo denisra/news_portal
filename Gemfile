@@ -56,7 +56,7 @@ gem 'rails-i18n', '~> 4.0.0'
 
 # Use Capistrano for deployment
  gem 'capistrano'
- #gem 'capistrano-bundler'
+ gem 'capistrano-bundler'
  gem 'capistrano-rails'
 
 # Use debugger
