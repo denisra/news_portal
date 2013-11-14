@@ -3,6 +3,7 @@ NewsPortal::Application.routes.draw do
   get 'home' => 'home#index'
   get "home/index"
   #get "home/show"
+  get ':id' => 'home#show'
   get 'home/show/:id' => 'home#show', :as => 'show'
   get 'tags/:tag', to: 'home#index', as: :tag
   get 'home/comments/:id' => 'home#comments', :as => 'comments'

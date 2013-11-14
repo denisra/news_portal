@@ -412,3 +412,10 @@ input[type="color"],
   height: 300px;
 }
 
+#main-carousel a{
+    color: #FFFFFF;
+}
+#main-carousel a:hover{
+    color: #9f9f9f;
+}
+
