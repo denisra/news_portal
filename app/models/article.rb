@@ -8,6 +8,9 @@ class Article < ActiveRecord::Base
 	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
 
 	default_scope -> {order('published_at DESC')}
+  scope :today, -> { where('published_at >= ?', Date.today)}
+  scope :featured, -> {today.reorder(clicks: :desc).limit(5)}
+
 
 	def self.update_from_webpage(feed_url)
 	    if feed_url.include? 'ego'
