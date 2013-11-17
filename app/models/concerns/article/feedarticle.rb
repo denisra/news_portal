@@ -8,11 +8,19 @@
 			    tmp_entries = feed.entries
 			    entries = []
 			    tmp_entries.each do |e|
-			    	page = Nokogiri::HTML(open(e.url))
+            begin
+			    	  page = Nokogiri::HTML(open(e.url))
+            rescue OpenURI::HTTPError => error
+              logger.error "'#{error.message}' - '#{e.title}'"
+              next
+            end
 			    	e.image = parse_feed_img(page, source)
 			    	if e.image != nil
 			    		e.categories = parse_tags(page, source)
 			    		e.author = parse_author(page, source)
+              if e.published == nil
+                e.published = get_published_date(page, source)
+              end
 			    		entries << e
 			    		logger.info "Processing entry: '#{e.title}'"
 			    		save = create_feed_article(e, source)
@@ -35,7 +43,11 @@
 
 			def self.parse_tags(page, source)
 				if source == 'EGO'
-					tags = page.xpath('//meta[contains(@name, "keywords")]/@content').to_s
+          tags = []
+					page.xpath('//a[contains(@class, "autolink")]/text()').each do |tag|
+            tags << tag.to_s
+          end
+          tags
 				elsif source == 'UOL'
 					tags = page.xpath('//meta[contains(@name, "news_keywords")]/@content').to_s
 				elsif source == 'iG Gente'
@@ -55,12 +67,14 @@
 			end
 
 
-      def self.get_published_date(published_date)
-        if published_date == nil
-          published_date = Time.now
-        else
-          published_date
+      def self.get_published_date(page, source)
+        if source == 'EGO'
+          published_date = page.xpath('//abbr[contains(@class, "published")]/@time').to_s
         end
+        if published_date == nil
+          published_date = Time.now.to_s
+        end
+        published_date
       end
 
 
@@ -130,11 +144,11 @@
 				#entries.each do |entry|
 				  	unless exists? :permalink => entry.url
 				    	create(			
-							:title 	=>	entry.title, 
+							:title 	=>	entry.title.sanitize,
 							:permalink 	=>	entry.url,
 							:content	=>	entry.summary,
 							:source 	=>	entry.author,
-							:published_at 	=>	get_published_date(entry.published),
+							:published_at 	=>	entry.published,
 							:image	=>	entry.image,
 							:guid 	=>	'blank',
 							:tag_list => entry.categories

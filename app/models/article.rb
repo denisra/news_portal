@@ -26,7 +26,7 @@ class Article < ActiveRecord::Base
 		 	source = 'iG Gente'
 		elsif feed.feed_url.include? 'uol.com.br'
 	  	source = 'UOL'
-	  elsif feed.feed_url.include? 'edsaddfgo'
+	  elsif feed.feed_url.include? 'ego'
 	  	source = 'EGO'
 		end
 		parse_feed(feed, source)
@@ -36,16 +36,21 @@ class Article < ActiveRecord::Base
   def self.feed_updated?
     Feed.all.each do |f|
       feed = Feedzirra::Feed.fetch_and_parse(f.feed_url)
-      logger.info "Feed: '#{f.title}'"
-      logger.info "Local feed last modified: '#{f.last_modified}' - Feed last modified: '#{feed.last_modified}'"
-      if feed.last_modified > f.last_modified
-        logger.info "Processing Feed: '#{feed.title}'"
-        new_articles = Feed.return_new_articles(feed, f.last_modified)
-        logger.info "'#{new_articles.entries.count}' new articles."
-        update_from_feed(new_articles)
-        Feed.update(f.id, :last_modified => feed.last_modified)
+      if feed.last_modified == nil
+        logger.info "Feed '#{feed.title}' has no last modified attribute."
+        update_from_feed(feed)
       else
-        logger.info "Feed '#{feed.title}' is already up-to-date."
+        logger.info "Feed: '#{f.title}'"
+        logger.info "Local feed last modified: '#{f.last_modified}' - Feed last modified: '#{feed.last_modified}'"
+        if feed.last_modified > f.last_modified
+          logger.info "Processing Feed: '#{feed.title}'"
+          new_articles = Feed.return_new_articles(feed, f.last_modified)
+          logger.info "'#{new_articles.entries.count}' new articles."
+          update_from_feed(new_articles)
+          Feed.update(f.id, :last_modified => feed.last_modified)
+        else
+          logger.info "Feed '#{feed.title}' is already up-to-date."
+        end
       end
     end
   end
