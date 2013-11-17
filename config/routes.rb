@@ -1,13 +1,15 @@
 NewsPortal::Application.routes.draw do
   
-  get 'home' => 'home#index'
-  get "home/index"
+#  get 'home' => 'home#index'
+#  get "home/index"
   #get "home/show"
-  get ':id' => 'home#show'
-  get 'home/show/:id' => 'home#show', :as => 'show'
+  #get '' => 'home#index'
+  get 'noticias' => 'home#index'
+  get 'noticias/:id' => 'home#show', :as => 'show'
+  #get 'home/show/:id' => 'home#show', :as => 'show'
   get 'tags/:tag', to: 'home#index', as: :tag
-  get 'home/comments/:id' => 'home#comments', :as => 'comments'
-  get 'home/render_comments/:id' => 'home#render_comments'
+  get 'noticias/comments/:id' => 'home#comments', :as => 'comments', via: [:get, :post]
+  get 'home/render_comments/:id' => 'home#render_comments', via: [:get, :post]
 
 
   #resources :home
@@ -27,7 +29,7 @@ NewsPortal::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  root to: 'home#index' #, as: '/'
+  root to: 'home#index'#, :as => '/'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

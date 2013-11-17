@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   
 	def index
 		if params[:tag]
-			@articles = Article.tagged_with(params[:tag])
+			@articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page], :per_page => 12)
 #    elsif params[:date]
 #      @articles = Article.
 		else
