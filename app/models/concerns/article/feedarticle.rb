@@ -19,8 +19,9 @@
 			    		e.categories = parse_tags(page, source)
 			    		e.author = parse_author(page, source)
               if e.published == nil
-                e.published = get_published_date(page, source)
+                e.published = get_published_date(page, source, e)
               end
+              logger.info "Article published date: '#{e.published}'"
 			    		entries << e
 			    		logger.info "Processing entry: '#{e.title}'"
 			    		save = create_feed_article(e, source)
@@ -67,14 +68,15 @@
 			end
 
 
-      def self.get_published_date(page, source)
+      def self.get_published_date(page, source, entry)
+        if entry.published == nil
+          published_date = Time.now.to_s
+          published_date
+        end
         if source == 'EGO'
           published_date = page.xpath('//abbr[contains(@class, "published")]/@time').to_s
+          published_date
         end
-        if published_date == nil
-          published_date = Time.now.to_s
-        end
-        published_date
       end
 
 
@@ -90,7 +92,9 @@
 						else
 							image = nil
 						end
-					end
+          end
+        elsif source == 'EGO'
+          image =  page.xpath('//div[contains(@class, "foto")]/img/@src').first.to_s
 				else
 					image = page.xpath('//meta[contains(@property, "og:image")]/@content').first.to_s
 					if image.size > 0

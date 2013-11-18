@@ -12,7 +12,7 @@
   <!-- Carousel items -->
   <div class="carousel-inner">
     <div class="active item">
-	<%= link_to image_tag(@articles_featured.first.image.url), show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+	<%= link_to image_tag(@articles_featured.first.image.url(:carousel)), show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
 	<div class="carousel-caption">
 	  <h4><%= link_to @articles_featured.first.title, show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
 	  <p><%= @articles_featured.first.permalink %>
@@ -22,7 +22,7 @@
 
     <% @articles_featured[1..-1].each_with_index do |article| %>
         <div class="item">
-            <%= link_to image_tag(article.image.url), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+            <%= link_to image_tag(article.image.url(:carousel)), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
             <div class="carousel-caption">
             <h4><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
             <p><%= article.permalink %>
@@ -51,7 +51,7 @@
           <% @articles.each do |article| %>
             <li class="span3">
           <div class="thumbnail">
-             <%= link_to image_tag(article.image.url(:original)), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+             <%= link_to image_tag(article.image.url(:medium)), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
                 <div class="caption">
                   <h5><%= article.title %> </h5>
                   <p><%= article.source %> </p>
