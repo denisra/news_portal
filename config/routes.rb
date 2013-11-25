@@ -7,7 +7,8 @@ NewsPortal::Application.routes.draw do
   get 'noticias' => 'home#index'
   get 'noticias/:id' => 'home#show', :as => 'show'
   #get 'home/show/:id' => 'home#show', :as => 'show'
-  get 'tags/:tag', to: 'home#index', as: :tag
+  #get 'tags/:tag', to: 'home#tags', as: :tag
+  get 'tags/:tag', to: 'home#tags', as: 'tag'
   get 'noticias/comments/:id' => 'home#comments', :as => 'comments', via: [:get, :post]
   get 'home/render_comments/:id' => 'home#render_comments', via: [:get, :post]
   get '/home/autocomplete' => 'home#autocomplete'

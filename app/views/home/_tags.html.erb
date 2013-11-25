@@ -1,0 +1,30 @@
+<div class="row-fluid">
+  <div class="span12">
+    <ul class="thumbnails">
+      <% @articles.each do |article| %>
+          <li class="span3">
+            <div class="thumbnail">
+              <%= link_to image_tag(article.image.url(:medium)), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+              <div class="caption">
+                <h5><%= article.title %> </h5>
+                <span class="label label-danger"><%= link_to article.site_list.first, tag_path(article.site_list.first) %> </span>
+                <p> <i class="pull-left icon-cx icon-time"> </i> <%= "há " + time_ago_in_words(article.published_at) %> </p>
+                <hr style="margin:8px auto">
+                <% article.tag_list.each do |t| %>
+                <span class="label label-info">
+                <%= link_to t, tag_path(t) %>
+                </span>
+                <% end %>
+                <p> Clicks: <%= article.clicks %> </p>
+                <hr style="margin:8px auto">
+                <div class="btn-group">
+                  <%= link_to '<i class="pull-left icon-2x icon-comments"></i>'.html_safe, comments_path(id: article.id), {:class => 'btn btn-inverse disabled', :remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-comments'} %>
+                  <%= link_to '<i class="pull-left icon-2x icon-facebook"></i>'.html_safe, 'https://www.facebook.com/sharer/sharer.php?u=' + show_url(id: article.id), :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;", :class => 'btn btn-inverse disabled' %>
+                </div>
+              </div>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
