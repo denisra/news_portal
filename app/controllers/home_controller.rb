@@ -5,6 +5,9 @@ class HomeController < ApplicationController
 			@articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page], :per_page => 12)
 #    elsif params[:date]
 #      @articles = Article.
+    elsif params[:query].present?
+      @articles = Article.search(params[:query]) #, page: params[:page], per_page: 12
+      #@articles = articles.paginate(:page => params[:page], :per_page => 12)
 		else
 			@articles = Article.paginate(:page => params[:page], :per_page => 12)
     end
@@ -35,6 +38,22 @@ class HomeController < ApplicationController
 	def render_comments
 		#@article = Article.find(params[:id])
 		render :partial => 'comments'
-	end
+  end
+
+  def search
+    if params[:query].present?
+      @articles = Article.search(params[:query]).paginate(:page => params[:page], :per_page => 12)
+    else
+      @articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page], :per_page => 12)
+    end
+  end
+
+  def autocomplete
+    #articles = Article.search(params[:query], autocomplete: false, limit: 10).map {|a| [a.title, (url_for :action => 'show', :id => a.id, :only_path => true)]}
+    #tags = ActsAsTaggableOn::Tag.where('name like ?', params[:query])
+    render json: Article.search(params[:query], autocomplete: false, misspellings: {distance: 2}, limit: 10).map {|a| [a.title, (url_for :action => 'show', :id => a.id, :only_path => true)]}
+    #json = { :articles => articles, :tags => tags}.to_json
+    #render json: json
+  end
 
 end

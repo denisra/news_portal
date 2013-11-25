@@ -10,6 +10,7 @@ NewsPortal::Application.routes.draw do
   get 'tags/:tag', to: 'home#index', as: :tag
   get 'noticias/comments/:id' => 'home#comments', :as => 'comments', via: [:get, :post]
   get 'home/render_comments/:id' => 'home#render_comments', via: [:get, :post]
+  get '/home/autocomplete' => 'home#autocomplete'
 
 
   #resources :home

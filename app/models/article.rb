@@ -4,12 +4,15 @@ class Article < ActiveRecord::Base
 	include Egoarticle
 	include Feedarticle
 	acts_as_taggable
+  acts_as_ordered_taggable_on :site
 
 	has_attached_file :image, :styles => { :medium => "300x200>", :thumb => "100x100>", :carousel => "800x300>" }, :default_url => "/images/:style/missing.png"
 
 	default_scope -> {order('published_at DESC')}
   scope :today, -> { where('published_at >= ?', Date.today)}
   scope :featured, -> {today.reorder(clicks: :desc).limit(5)}
+
+  searchkick autocomplete: ['title']
 
 
 	def self.update_from_webpage(feed_url)

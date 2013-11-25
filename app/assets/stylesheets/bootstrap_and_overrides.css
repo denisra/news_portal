@@ -274,12 +274,16 @@ input[type="color"],
      color: #FFFFFF;
      font-size: 8.5px;
 }
-.label a:hover{
+.label-info a:hover{
   background-color: #3A87AD;
 }
 
 .label a:visited {
      color: #FFFFFF;
+}
+
+.label-danger a:hover {
+    background-color: #999999;
 }
 
 .label,
@@ -419,3 +423,7 @@ input[type="color"],
     color: #9f9f9f;
 }
 
+.navbar-search {
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
