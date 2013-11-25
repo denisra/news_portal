@@ -54,7 +54,7 @@
              <%= link_to image_tag(article.image.url(:medium)), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
                 <div class="caption">
                   <h5><%= article.title %> </h5>
-                  <p><%= article.source %> </p>
+                  <span class="label label-danger"><%= link_to article.site_list.first, tag_path(article.site_list.first) %> </span>
                   <p> <i class="pull-left icon-cx icon-time"> </i> <%= "há " + time_ago_in_words(article.published_at) %> </p>
                   <hr style="margin:8px auto">
                   <% article.tag_list.each do |t| %>

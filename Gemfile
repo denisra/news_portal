@@ -43,7 +43,9 @@ gem 'acts-as-taggable-on'
 gem 'whenever', :require => false
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap', '0.2.5'
-gem 'omniauth-facebook'
+gem 'searchkick'
+gem 'jquery-turbolinks'
+#gem 'omniauth-facebook'
 
 gem 'rails-i18n', '~> 4.0.0'
 

@@ -5,3 +5,15 @@ jQuery ->
           interval: 5000
   });
 
+$ ->
+  $('#article_search').typeahead
+    name: "article"
+    remote: '/home/autocomplete?query=%QUERY'
+    limit: 10
+    valueKey: [0]
+    template: (datum) ->
+      '<p><a href="'+datum[1]+'">'+datum[0]+'</a></p>'
+
+
+
+

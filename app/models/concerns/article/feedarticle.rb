@@ -155,7 +155,8 @@
 							:published_at 	=>	entry.published,
 							:image	=>	entry.image,
 							:guid 	=>	'blank',
-							:tag_list => entry.categories
+							:tag_list => entry.categories,
+              :site_list => entry.author
 						)
 					else
 						return 'exists'
