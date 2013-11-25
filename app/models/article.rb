@@ -6,6 +6,8 @@ class Article < ActiveRecord::Base
 	acts_as_taggable
   acts_as_ordered_taggable_on :site
 
+  self.per_page = 12
+
 	has_attached_file :image, :styles => { :medium => "300x200>", :thumb => "100x100>", :carousel => "800x300>" }, :default_url => "/images/:style/missing.png"
 
 	default_scope -> {order('published_at DESC')}

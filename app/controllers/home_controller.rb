@@ -2,16 +2,20 @@ class HomeController < ApplicationController
   
 	def index
 		if params[:tag]
-			@articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page], :per_page => 12)
+			@articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page])
 #    elsif params[:date]
 #      @articles = Article.
     elsif params[:query].present?
       @articles = Article.search(params[:query]) #, page: params[:page], per_page: 12
       #@articles = articles.paginate(:page => params[:page], :per_page => 12)
 		else
-			@articles = Article.paginate(:page => params[:page], :per_page => 12)
+			@articles = Article.paginate(:page => params[:page])
     end
     @articles_featured = Article.featured.size != 0 ? Article.featured : Article.order(published_at: :desc).reorder(clicks: :desc).limit(5)
+    respond_to do |format|
+      format.html
+      format.js
+    end
 	end
 	def show
 		@article = Article.find(params[:id])
@@ -42,9 +46,9 @@ class HomeController < ApplicationController
 
   def search
     if params[:query].present?
-      @articles = Article.search(params[:query]).paginate(:page => params[:page], :per_page => 12)
+      @articles = Article.search(params[:query]).paginate(:page => params[:page])
     else
-      @articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page], :per_page => 12)
+      @articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page])
     end
   end
 
