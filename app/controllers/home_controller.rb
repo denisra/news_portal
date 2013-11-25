@@ -1,11 +1,11 @@
 class HomeController < ApplicationController
   
 	def index
-		if params[:tag]
-			@articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page])
+		#if params[:tag]
+		#	@articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page])
 #    elsif params[:date]
 #      @articles = Article.
-    elsif params[:query].present?
+    if params[:query].present?
       @articles = Article.search(params[:query]) #, page: params[:page], per_page: 12
       #@articles = articles.paginate(:page => params[:page], :per_page => 12)
 		else
@@ -27,7 +27,19 @@ class HomeController < ApplicationController
 			format.js
 			format.json { render json: @article}
 		end
-	end
+  end
+
+
+  def tags
+    if params[:tag]
+      @articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page])
+      respond_to do |format|
+        format.html
+        format.js
+      end
+    end
+  end
+
 	
 	def comments
 		@article = Article.find(params[:id])

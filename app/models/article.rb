@@ -4,7 +4,7 @@ class Article < ActiveRecord::Base
 	include Egoarticle
 	include Feedarticle
 	acts_as_taggable
-  acts_as_ordered_taggable_on :site
+  acts_as_taggable_on :site
 
   self.per_page = 12
 

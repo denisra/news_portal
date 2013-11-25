@@ -21,6 +21,12 @@ $ ->
 
     $.getScript $(this).attr('href')
 
+$ ->
+  $('a.load-more-tags').on 'inview', (e, visible) ->
+    return unless visible
+
+    $.getScript $(this).attr('href')
+
 
 
 
