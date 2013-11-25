@@ -15,7 +15,8 @@
 //= articles
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require typeahead
+//= require typeahead.min
+//= require jquery.inview.min
 //= require_tree .
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR

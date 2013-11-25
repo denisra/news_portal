@@ -15,5 +15,12 @@ $ ->
       '<p><a href="'+datum[1]+'">'+datum[0]+'</a></p>'
 
 
+$ ->
+  $('a.load-more-articles').on 'inview', (e, visible) ->
+    return unless visible
+
+    $.getScript $(this).attr('href')
+
+
 
 

@@ -1,0 +1,6 @@
+$('#main-articles').append("<%= escape_javascript(render partial: 'index', :locals => { :articles => @articles }) %>");
+$('a.load-more-articles').attr('href', "<%= noticias_path page: @articles.next_page %>");
+
+<% unless @articles.next_page %>
+    $('a.load-more-articles').remove();
+<% end %>
