@@ -12,7 +12,7 @@
                 <hr style="margin:8px auto">
                 <% article.tag_list.each do |t| %>
                 <span class="label label-info">
-                <%= link_to t, tag_path(t) %>
+                <%= link_to t.titleize, tag_path(t) %>
                 </span>
                 <% end %>
                 <p> Clicks: <%= article.clicks %> </p>
