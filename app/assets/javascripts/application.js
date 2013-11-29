@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery.turbolinks
-//= articles
+//= require articles
 //= require jquery_ujs
-//= require twitter/bootstrap
+//= require bootstrap.min
 //= require typeahead.min
 //= require jquery.inview.min
 //= require_tree .

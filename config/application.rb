@@ -22,5 +22,6 @@ module NewsPortal
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.css *.scss *.ttf *.woff *.eot)
     config.i18n.available_locales = ['pt-BR']
     config.i18n.default_locale = 'pt-BR'
+    #config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end

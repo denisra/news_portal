@@ -35,7 +35,7 @@ group :doc do
 end
 
 #gem 'bootstrap-sass', '2.3.2.2'
-gem 'twitter-bootstrap-rails', '~> 2.2.8'
+#gem 'twitter-bootstrap-rails', '~> 2.2.8'
 gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails', :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 gem 'feedzirra', :git => 'git://github.com/pauldix/feedzirra.git'
 gem 'nokogiri', '~> 1.6.0' #, :require => 'nokogiri',  :git => 'git://github.com/sparklemotion/nokogiri.git'

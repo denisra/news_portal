@@ -1,43 +1,49 @@
 <%- model_class = Article -%>
 <div class="page-header">
+  <div class="row">
+    <div class="col-4">
+        <div class="panel">
+          <div class="panel-body">
+                <div id="main-carousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-carousel" data-slide-to="1" class></li>
+                    <li data-target="#main-carousel" data-slide-to="2" class></li>
+                    <li data-target="#main-carousel" data-slide-to="3" class></li>
+                    <li data-target="#main-carousel" data-slide-to="4" class></li>
+                  </ol>
+                  <!-- Carousel items -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                        <%= link_to image_tag(@articles_featured.first.image.url(:carousel), :class => 'img-responsive'), show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+                        <div class="carousel-caption">
+                            <h4><%= link_to @articles_featured.first.title, show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+                            <p><%= @articles_featured.first.permalink %>
+                        </div>
+                    </div>
 
-<div id="main-carousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#main-carousel" data-slide-to="1"></li>
-    <li data-target="#main-carousel" data-slide-to="2"></li>
-    <li data-target="#main-carousel" data-slide-to="3"></li>
-    <li data-target="#main-carousel" data-slide-to="4"></li>
-  </ol>
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-	<%= link_to image_tag(@articles_featured.first.image.url(:carousel)), show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
-	<div class="carousel-caption">
-	  <h4><%= link_to @articles_featured.first.title, show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
-	  <p><%= @articles_featured.first.permalink %>
-	</div>
-
-    </div>
-
-    <% @articles_featured[1..-1].each_with_index do |article| %>
-        <div class="item">
-            <%= link_to image_tag(article.image.url(:carousel)), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
-            <div class="carousel-caption">
-            <h4><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
-            <p><%= article.permalink %>
-            </div>
+                    <% @articles_featured[1..-1].each_with_index do |article| %>
+                        <div class="item">
+                            <%= link_to image_tag(article.image.url(:carousel), :class => 'img-responsive'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+                            <div class="carousel-caption">
+                                <h4><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+                                <p><%= article.permalink %>
+                            </div>
+                        </div>
+                    <% end %>
+                  </div>
+                  <!-- Carousel nav -->
+                  <a class="left carousel-control" href="#main-carousel" data-slide="prev">
+                    <span id="main-carousel-control" class="fa fa-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#main-carousel" data-slide="next">
+                    <span id="main-carousel-control" class="fa fa-chevron-right"></span>
+                  </a>
+                </div>
+          </div>
         </div>
-    <% end %>
-
+    </div>
   </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#main-carousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#main-carousel" data-slide="next">&rsaquo;</a>
-</div>
-
-
-
 </div>
 
 <div class="container" id="main-articles">
@@ -47,35 +53,43 @@
 <%= link_to 'Mais Notícias', noticias_path(:page => @articles.next_page), :class => 'load-more-articles', :remote => true if @articles.next_page %>
 
 
-<div class="span12 pagination-centered">
+<div class="col-12 pagination-centered">
   <%= image_tag("http://placehold.it/728x90") %>
 </div>
 
 
-<div id="modal-comments" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3 class="modal-heading">Modal header</h3>
-  </div>
-  <div class="modal-body">
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Fechar</a>
-  </div>
+<div id="modal-comments" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div id="modal-comments-content" class="modal-content">
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 class="modal-heading">Modal header</h3>
+    </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Fechar</a>
+      </div>
+     </div>
+    </div>
 </div>
 
 
 
-<div id="modal-article" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3 class="modal-heading">Modal header</h3>
-  </div>
-  <div class="modal-body">
+<div id="modal-article" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div id="modal-article-content" class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-heading">Modal header</h3>
+      </div>
+      <div class="modal-body">
 
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Fechar</a>
-  </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Fechar</a>
+      </div>
+     </div>
+    </div>
 </div>
 

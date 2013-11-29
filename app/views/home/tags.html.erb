@@ -4,7 +4,7 @@
 </div>
 
 <div class="container" id="main-tags">
-  <%= render :partial => 'tags', :locals => {:articles => @articles} %>
+  <%= render :partial => 'index', :locals => {:articles => @articles} %>
 </div>
 
 <%= link_to 'Mais Notícias', tag_path(:page => @articles.next_page), :class => 'load-more-tags', :remote => true if @articles.next_page %>

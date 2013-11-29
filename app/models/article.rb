@@ -8,7 +8,7 @@ class Article < ActiveRecord::Base
 
   self.per_page = 12
 
-	has_attached_file :image, :styles => { :medium => "300x200>", :thumb => "100x100>", :carousel => "800x300>" }, :default_url => "/images/:style/missing.png"
+	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>", :carousel => "800x800>" }, :default_url => "/images/:style/missing.png"
 
 	default_scope -> {order('published_at DESC')}
   scope :today, -> { where('published_at >= ?', Date.today)}
