@@ -53,10 +53,6 @@
 <%= link_to 'Mais Notícias', noticias_path(:page => @articles.next_page), :class => 'load-more-articles', :remote => true if @articles.next_page %>
 
 
-<div class="col-12 pagination-centered">
-  <%= image_tag("http://placehold.it/728x90") %>
-</div>
-
 
 <div id="modal-comments" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">

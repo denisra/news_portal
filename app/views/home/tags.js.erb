@@ -1,4 +1,4 @@
-$('#main-tags').append("<%= escape_javascript(render partial: 'tags', :locals => { :articles => @articles }) %>");
+$('#main-tags').append("<%= escape_javascript(render partial: 'index', :locals => { :articles => @articles }) %>");
 $('a.load-more-tags').attr('href', "<%= tag_path page: @articles.next_page %>");
 
 <% unless @articles.next_page %>

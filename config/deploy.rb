@@ -1,5 +1,6 @@
 set :application, 'portal'
 set :repo_url, 'git@bitbucket.org:denisra/news_portal.git'
+set :branch, "bootstrap3"
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
