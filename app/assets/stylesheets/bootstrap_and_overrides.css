@@ -126,10 +126,24 @@ body {
     margin: 0 auto 20px;
 }
 
+.caption > .btn-group > .btn-responsive {
+    padding: 5px;
+}
+
+
 @media (max-width: 768px) {
     .btn-responsive > i {
         font-size: 80%;
         white-space: normal;
     }
-
+    #article-thumbnail {
+        height: 400px;
+    }
+    .caption, .caption > h5, .caption > p, .caption > btn-group {
+        font-size: 80%;
+    }
+    .thumbnail img {
+        max-height: 150px;
+        max-width: 300px;
+    }
 }
