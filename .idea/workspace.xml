@@ -35,7 +35,7 @@
     <file path="/_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386007588540" ignored="false" />
     <file path="/application.rb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385446702500" ignored="false" />
     <file path="/show.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385678284517" ignored="false" />
-    <file path="/_mobile_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386018630077" ignored="false" />
+    <file path="/_mobile_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386019204638" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.17880794">
+            <state line="3" column="49" selection-start="134" selection-end="134" vertical-scroll-proportion="0.059602648">
               <folding />
             </state>
           </provider>
@@ -1274,7 +1274,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.17880794">
+        <state line="3" column="49" selection-start="134" selection-end="134" vertical-scroll-proportion="0.059602648">
           <folding />
         </state>
       </provider>

@@ -1,20 +1,22 @@
 <div class="row">
-  <% @articles.each do |article| %>
-      <div class="col-xs-6 col-sm-4 col-md-3">
-        <div class="media">
-          <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'media-object'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article', :class => 'pull-left'} %>
-          <div class="media-body">
-            <h5 class="media-heading"><%= article.title %> </h5>
-            <span class="label label-primary"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span>
-            <p> <i class="pull-left fa fa-clock-o icon-cx"> </i> <%= "há " + time_ago_in_words(article.published_at) %> </p>
+  <div class="media-list">
+      <% @articles.each do |article| %>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="media">
+              <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'media-object'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article', :class => 'pull-left'} %>
+              <div class="media-body">
+                <h5 class="media-heading"><%= article.title %> </h5>
+                <span class="label label-primary"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span>
+                <p> <i class="pull-left fa fa-clock-o icon-cx"> </i> <%= "há " + time_ago_in_words(article.published_at) %> </p>
 
+              </div>
           </div>
+          </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <%= image_tag("http://placehold.it/728x90", :class => 'img-responsive', :id => 'main-large-ad') %>
       </div>
-      </div>
-  <% end %>
-</div>
-<div class="row">
-  <div class="col-4">
-    <%= image_tag("http://placehold.it/728x90", :class => 'img-responsive', :id => 'main-large-ad') %>
   </div>
 </div>
