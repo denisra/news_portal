@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f08c165-9c1f-40da-9408-d1f84d984c57" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.js.erb" afterPath="$PROJECT_DIR$/app/views/home/index.js.erb" />
     </list>
     <ignored path="news_portal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +28,7 @@
     <file path="/application.js" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385049557644" ignored="false" />
     <file path="/typeahead.css" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385068789488" ignored="false" />
     <file path="/application.css" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385447220620" ignored="false" />
-    <file path="/index.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385368722460" ignored="false" />
+    <file path="/index.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386021194315" ignored="false" />
     <file path="/tags.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385449195615" ignored="false" />
     <file path="/tags.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385688183092" ignored="false" />
     <file path="/newsportal_parameters.rb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385440794435" ignored="false" />
@@ -35,7 +36,7 @@
     <file path="/_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386020322689" ignored="false" />
     <file path="/application.rb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385446702500" ignored="false" />
     <file path="/show.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385678284517" ignored="false" />
-    <file path="/_mobile_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386020791360" ignored="false" />
+    <file path="/_mobile_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386021119911" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,19 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.js.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="6" column="63" selection-start="422" selection-end="422" vertical-scroll-proportion="0.1171875">
               <folding />
             </state>
           </provider>
@@ -168,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home/_tags.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee" />
         <option value="$PROJECT_DIR$/app/models/article.rb" />
@@ -184,6 +184,7 @@
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.js.erb" />
       </list>
     </option>
   </component>
@@ -1237,13 +1238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="36" selection-start="18" selection-end="36" vertical-scroll-proportion="-0.0">
@@ -1256,7 +1250,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="63" selection-start="422" selection-end="422" vertical-scroll-proportion="0.1171875">
           <folding />
         </state>
       </provider>

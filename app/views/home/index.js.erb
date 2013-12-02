@@ -1,3 +1,4 @@
+$('#mobile-articles').append("<%= escape_javascript(render partial: 'mobile_index', :locals => { :articles => @articles }) %>");
 $('#main-articles').append("<%= escape_javascript(render partial: 'index', :locals => { :articles => @articles }) %>");
 $('a.load-more-articles').attr('href', "<%= noticias_path page: @articles.next_page %>");
 
