@@ -96,8 +96,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="33" column="0" selection-start="0" selection-end="2156" vertical-scroll-proportion="-20.625">
               <folding>
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1386007586000" expanded="true" signature="16:1995" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="97:1978" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="152:1967" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="422:1952" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="768:783" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="823:1096" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="944:1043" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="1180:1195" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="1249:1933" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="2013:2154" placeholder="..." />
+                <marker date="1386007586000" expanded="true" signature="2035:2147" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -106,11 +115,8 @@
       <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.119205296">
-              <folding>
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="9" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.17880794">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1237,8 +1243,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="0" selection-end="2156" vertical-scroll-proportion="-20.625">
           <folding>
-            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1386007586000" expanded="true" signature="16:1995" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="97:1978" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="152:1967" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="422:1952" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="768:783" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="823:1096" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="944:1043" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="1180:1195" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="1249:1933" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="2013:2154" placeholder="..." />
+            <marker date="1386007586000" expanded="true" signature="2035:2147" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1259,11 +1274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.119205296">
-          <folding>
-            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="9" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.17880794">
+          <folding />
         </state>
       </provider>
     </entry>
