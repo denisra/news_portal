@@ -1,31 +1,32 @@
-<div class="row">
+<div class="row"  id="main-articles">
   <% @articles.each do |article| %>
-    <div class="col-xs-6 col-sm-4 col-md-3">
+      <div class="col-xs-6 col-sm-4 col-md-3">
         <div id="article-thumbnail" class="thumbnail">
-            <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article', :class => 'thumbnail'} %>
-            <div class="caption">
-                <h5><%= article.title %> </h5>
-                <span class="label label-primary"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span>
-                <p> <i class="pull-left fa fa-clock-o icon-cx"> </i> <%= "há " + time_ago_in_words(article.published_at) %> </p>
-                <hr style="margin:8px auto">
-                <div class="clearfix">
-                    <% article.tag_list.each do |t| %>
+          <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article', :class => 'thumbnail'} %>
+          <div class="caption">
+            <h5><%= article.title %> </h5>
+            <span class="label label-primary"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span>
+            <p> <i class="pull-left fa fa-clock-o icon-cx"> </i> <%= "há " + time_ago_in_words(article.published_at) %> </p>
+            <hr style="margin:8px auto">
+            <div class="clearfix">
+              <% article.tag_list.each do |t| %>
                         <span class="pull-left label label-info">
                             <%= link_to t.titleize, tag_path(t) %>
                         </span>
-                    <% end %>
-                </div>
-                <p> Clicks: <%= article.clicks %> </p>
-                <hr style="margin:8px auto">
-                <div class="btn-group btn-group-lg">
-                    <%= link_to '<i class="fa fa-comments-o fa-2x"></i>'.html_safe, comments_path(id: article.id), {:class => 'pull-left btn btn-default btn-responsive', :remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-comments'} %>
-                    <%= link_to '<i class="fa fa-facebook-square fa-2x"></i>'.html_safe, 'https://www.facebook.com/sharer/sharer.php?u=' + show_url(id: article.id), :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;", :class => 'pull-left btn btn-default btn-responsive' %>
-                </div>
+              <% end %>
             </div>
+            <p> Clicks: <%= article.clicks %> </p>
+            <hr style="margin:8px auto">
+            <div class="btn-group btn-group-lg">
+              <%= link_to '<i class="fa fa-comments-o fa-2x"></i>'.html_safe, comments_path(id: article.id), {:class => 'pull-left btn btn-default btn-responsive', :remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-comments'} %>
+              <%= link_to '<i class="fa fa-facebook-square fa-2x"></i>'.html_safe, 'https://www.facebook.com/sharer/sharer.php?u=' + show_url(id: article.id), :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;", :class => 'pull-left btn btn-default btn-responsive' %>
+            </div>
+          </div>
         </div>
-    </div>
-<% end %>
+      </div>
+  <% end %>
 </div>
+<%= link_to 'Mais Notícias', noticias_path(:page => @articles.next_page), :class => 'load-more-articles', :remote => true if @articles.next_page %>
 <div class="row">
   <div class="col-4">
     <%= image_tag("http://placehold.it/728x90", :class => 'img-responsive', :id => 'main-large-ad') %>
