@@ -152,4 +152,8 @@ body {
 
         max-width: 300px;
     }
+    .media-object {
+        max-height: 150px;
+        max-width: 150px;
+    }
 }
