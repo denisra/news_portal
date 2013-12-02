@@ -149,6 +149,7 @@ body {
     }
     .thumbnail img {
         max-height: 150px;
+
         max-width: 300px;
     }
 }
