@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f08c165-9c1f-40da-9408-d1f84d984c57" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/home/_mobile-index.html.erb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/home/_mobile-index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" />
     </list>
     <ignored path="news_portal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,6 +35,7 @@
     <file path="/_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386007588540" ignored="false" />
     <file path="/application.rb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385446702500" ignored="false" />
     <file path="/show.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385678284517" ignored="false" />
+    <file path="/_mobile_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386018630077" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +55,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="44" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.22516556">
+            <state line="85" column="155" selection-start="4249" selection-end="4249" vertical-scroll-proportion="-29.583334">
               <folding />
             </state>
           </provider>
@@ -105,13 +103,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="-1.875">
+            <state line="6" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.119205296">
               <folding>
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/home/_tags.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee" />
@@ -189,6 +186,7 @@
         <option value="$PROJECT_DIR$/app/views/home/_mobile-index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" />
       </list>
     </option>
   </component>
@@ -1252,20 +1250,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="-1.875">
-          <folding>
-            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="85" column="155" selection-start="4249" selection-end="4249" vertical-scroll-proportion="-29.583334">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="44" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.22516556">
-          <folding />
+        <state line="6" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.119205296">
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
