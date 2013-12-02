@@ -47,7 +47,11 @@
 </div>
 
 <div class="container" id="main-articles">
-  <%= render :partial => 'index', :locals => {:articles => @articles} %>
+  <% if mobile_device? %>
+      <%= render :partial => 'mobile-index', :locals => {:articles => @articles} %>
+  <% else %>
+      <%= render :partial => 'index', :locals => {:articles => @articles} %>
+  <% end %>
 </div>
 
 <%= link_to 'Mais Notícias', noticias_path(:page => @articles.next_page), :class => 'load-more-articles', :remote => true if @articles.next_page %>
