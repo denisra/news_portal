@@ -52,7 +52,9 @@
   <% else %>
       <%= render :partial => 'index', :locals => {:articles => @articles} %>
   <% end %>
+    <%= link_to 'Mais Notícias', noticias_path(:page => @articles.next_page), :class => 'load-more-articles', :remote => true if @articles.next_page %>
 </div>
+
 
 
 

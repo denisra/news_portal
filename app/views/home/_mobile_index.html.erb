@@ -13,11 +13,10 @@
           </div>
           </div>
       <% end %>
-    <%= link_to 'Mais Notícias', noticias_path(:page => @articles.next_page), :class => 'load-more-articles', :remote => true if @articles.next_page %>
     </div>
-    <div class="row">
-      <div class="col-4">
-        <%= image_tag("http://placehold.it/728x90", :class => 'img-responsive', :id => 'main-large-ad') %>
-      </div>
+</div>
+<div class="row">
+  <div class="col-4">
+    <%= image_tag("http://placehold.it/728x90", :class => 'img-responsive', :id => 'main-large-ad') %>
   </div>
 </div>

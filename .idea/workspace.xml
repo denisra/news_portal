@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f08c165-9c1f-40da-9408-d1f84d984c57" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.js.erb" afterPath="$PROJECT_DIR$/app/views/home/index.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/font-awesome.min.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-967ac21a874c80e36041ddd5cc6952ad.json" afterPath="$PROJECT_DIR$/public/assets/manifest-967ac21a874c80e36041ddd5cc6952ad.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="news_portal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,14 +34,14 @@
     <file path="/home.js.coffee" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385004364546" ignored="false" />
     <file path="/application.js" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385049557644" ignored="false" />
     <file path="/typeahead.css" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385068789488" ignored="false" />
-    <file path="/application.css" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385447220620" ignored="false" />
+    <file path="/application.css" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386101452072" ignored="false" />
     <file path="/index.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386021194315" ignored="false" />
     <file path="/tags.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385449195615" ignored="false" />
     <file path="/tags.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385688183092" ignored="false" />
     <file path="/newsportal_parameters.rb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385440794435" ignored="false" />
     <file path="/_tags.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385449010330" ignored="false" />
     <file path="/_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386020322689" ignored="false" />
-    <file path="/application.rb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385446702500" ignored="false" />
+    <file path="/application.rb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386099457090" ignored="false" />
     <file path="/show.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385678284517" ignored="false" />
     <file path="/_mobile_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386021119911" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,7 +66,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="22" selection-start="2826" selection-end="2826" vertical-scroll-proportion="-10.833333">
+            <state line="54" column="2" selection-start="3042" selection-end="3042" vertical-scroll-proportion="-20.208334">
               <folding />
             </state>
           </provider>
@@ -74,28 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="33" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/article.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="10" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="36" selection-start="18" selection-end="36" vertical-scroll-proportion="-0.0">
+            <state line="32" column="6" selection-start="2111" selection-end="2111" vertical-scroll-proportion="-20.0">
               <folding>
                 <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -104,28 +93,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0">
+            <state line="21" column="6" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.41721854">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="63" selection-start="422" selection-end="422" vertical-scroll-proportion="0.1171875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tags.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/tags.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="425" selection-end="1328" vertical-scroll-proportion="-10.625">
+            <state line="6" column="9" selection-start="422" selection-end="422" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -134,10 +114,35 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="3668" selection-end="3668" vertical-scroll-proportion="-21.458334">
-              <folding>
-                <marker date="1385462521000" expanded="true" signature="3297:3592" placeholder="do ... end" />
-              </folding>
+            <state line="80" column="0" selection-start="3668" selection-end="3668" vertical-scroll-proportion="-23.333334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="23" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="4" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="font-awesome.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/font-awesome.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="3" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,9 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee" />
-        <option value="$PROJECT_DIR$/app/models/article.rb" />
         <option value="$PROJECT_DIR$/app/views/home/tags.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/home/show.js.erb" />
@@ -181,10 +183,13 @@
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/_mobile-index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
+        <option value="$PROJECT_DIR$/app/views/home/index.js.erb" />
+        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.js.erb" />
       </list>
     </option>
   </component>
@@ -1147,41 +1152,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="147" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Capfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="0.03787879">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/tags.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="68" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="12" selection-start="641" selection-end="641" vertical-scroll-proportion="0.2651515">
@@ -1192,13 +1162,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="43" selection-start="518" selection-end="518" vertical-scroll-proportion="0.2651515">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="17" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1224,9 +1187,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="22" selection-start="2826" selection-end="2826" vertical-scroll-proportion="-10.833333">
+        <state line="6" column="9" selection-start="422" selection-end="422" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/article.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="10" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="3" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="17" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="23" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="4" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="3668" selection-end="3668" vertical-scroll-proportion="-23.333334">
           <folding />
         </state>
       </provider>
@@ -1238,9 +1243,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="2" selection-start="3042" selection-end="3042" vertical-scroll-proportion="-20.208334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="18" selection-end="36" vertical-scroll-proportion="-0.0">
+        <state line="32" column="6" selection-start="2111" selection-end="2111" vertical-scroll-proportion="-20.0">
           <folding>
             <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1250,14 +1262,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="63" selection-start="422" selection-end="422" vertical-scroll-proportion="0.1171875">
+        <state line="21" column="6" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.41721854">
           <folding />
         </state>
       </provider>
