@@ -2,6 +2,8 @@
   <div class="media-list">
       <% @articles.each do |article| %>
           <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
             <div class="media">
               <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'media-object'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article', :class => 'pull-left'} %>
               <div class="media-body">
@@ -11,6 +13,8 @@
 
               </div>
           </div>
+                </div>
+              </div>
           </div>
       <% end %>
     </div>

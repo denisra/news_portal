@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f08c165-9c1f-40da-9408-d1f84d984c57" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_mobile_index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/font-awesome.min.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-967ac21a874c80e36041ddd5cc6952ad.json" afterPath="$PROJECT_DIR$/public/assets/manifest-967ac21a874c80e36041ddd5cc6952ad.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="news_portal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +35,7 @@
     <file path="/_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386020322689" ignored="false" />
     <file path="/application.rb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386099457090" ignored="false" />
     <file path="/show.js.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1385678284517" ignored="false" />
-    <file path="/_mobile_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386021119911" ignored="false" />
+    <file path="/_mobile_index.html.erb" changelist="0f08c165-9c1f-40da-9408-d1f84d984c57" time="1386106354324" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +88,7 @@
       <file leaf-file-name="_mobile_index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="6" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.41721854">
+            <state line="16" column="20" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3178808">
               <folding />
             </state>
           </provider>
@@ -1262,7 +1254,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_mobile_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.41721854">
+        <state line="16" column="20" selection-start="999" selection-end="999" vertical-scroll-proportion="0.3178808">
           <folding />
         </state>
       </provider>
