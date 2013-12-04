@@ -3,22 +3,19 @@
 
 </div>
 
-<div class="container" id="main-tags">
-  <% if mobile_device? %>
-      <%= render :partial => 'mobile_index', :locals => {:articles => @articles} %>
-  <% else %>
-      <%= render :partial => 'index', :locals => {:articles => @articles} %>
-  <% end %>
-</div>
+<% if mobile_device? %>
+    <div class="container" id="mobile-articles">
+        <%= render :partial => 'mobile_index', :locals => {:articles => @articles} %>
+    </div>
+<% else %>
+    <div class="container" id="main-articles">
+        <%= render :partial => 'index', :locals => {:articles => @articles} %>
+    </div>
+<% end %>
+
 
 <%= link_to 'Mais Notícias', tag_path(:page => @articles.next_page), :class => 'load-more-tags', :remote => true if @articles.next_page %>
 
-
-<div class="row">
-  <div class="col-4">
-    <%= image_tag("http://placehold.it/728x90", :class => 'img-responsive', :id => 'main-large-ad') %>
-  </div>
-</div>
 
 
 <div id="modal-comments" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
