@@ -4,14 +4,20 @@
 </div>
 
 <div class="container" id="main-tags">
-  <%= render :partial => 'index', :locals => {:articles => @articles} %>
+  <% if mobile_device? %>
+      <%= render :partial => 'mobile_index', :locals => {:articles => @articles} %>
+  <% else %>
+      <%= render :partial => 'index', :locals => {:articles => @articles} %>
+  <% end %>
 </div>
 
 <%= link_to 'Mais Notícias', tag_path(:page => @articles.next_page), :class => 'load-more-tags', :remote => true if @articles.next_page %>
 
 
-<div class="span12 pagination-centered">
-  <%= image_tag("http://placehold.it/728x90") %>
+<div class="row">
+  <div class="col-4">
+    <%= image_tag("http://placehold.it/728x90", :class => 'img-responsive', :id => 'main-large-ad') %>
+  </div>
 </div>
 
 

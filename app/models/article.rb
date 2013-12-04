@@ -4,11 +4,11 @@ class Article < ActiveRecord::Base
 	include Egoarticle
 	include Feedarticle
 	acts_as_taggable
-  acts_as_taggable_on :site
+  acts_as_taggable_on :tags, :site
 
   self.per_page = 12
 
-	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>", :carousel => "800x800>" }, :default_url => "/images/:style/missing.png"
+	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>", :carousel => "800x800>" }, :default_url => "/images/:style/missing.png", :dependent => :destroy
 
 	default_scope -> {order('published_at DESC')}
   scope :today, -> { where('published_at >= ?', Date.today)}
