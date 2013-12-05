@@ -165,17 +165,6 @@ body {
 	#container-carousel {
 		margin-bottom: 10px;
 	}
-	#main-carousel {
-	    max-width: 400px;
-
-	    margin: 0 auto;
-	}
-
-	#main-carousel img {
-	    min-width: 100%;
-	    min-height: 100%;
-
-	}
 	.carousel-caption {
 		font-size: 80%;
 	}
