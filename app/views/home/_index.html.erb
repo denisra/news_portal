@@ -20,6 +20,7 @@
             <div class="btn-group btn-group-lg">
               <%= link_to '<i class="fa fa-comments-o fa-2x"></i>'.html_safe, comments_path(id: article.id), {:class => 'pull-left btn btn-default btn-responsive', :remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-comments'} %>
               <%= link_to '<i class="fa fa-facebook-square fa-2x"></i>'.html_safe, 'https://www.facebook.com/sharer/sharer.php?u=' + show_url(id: article.id), :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;", :class => 'pull-left btn btn-default btn-responsive' %>
+			  <%= link_to '<i class="fa fa fa-thumbs-up fa-2x"></i>'.html_safe, 'https://www.facebook.com/plugins/like.php?href=' + show_url(id: article.id), {'data-action' => 'like',  :class => 'pull-left btn btn-default btn-responsive', :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;"} %>
             </div>
           </div>
         </div>
