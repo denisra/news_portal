@@ -1,49 +1,51 @@
 <%- model_class = Article -%>
 <div class="page-header">
-  <div class="row">
-    <div class="col-4">
-        <div class="panel">
-          <div class="panel-body">
-                <div id="main-carousel" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#main-carousel" data-slide-to="1" class></li>
-                    <li data-target="#main-carousel" data-slide-to="2" class></li>
-                    <li data-target="#main-carousel" data-slide-to="3" class></li>
-                    <li data-target="#main-carousel" data-slide-to="4" class></li>
-                  </ol>
-                  <!-- Carousel items -->
-                  <div class="carousel-inner">
-                    <div class="item active">
-                        <%= link_to image_tag(@articles_featured.first.image.url(:carousel), :class => 'img-responsive'), show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
-                        <div class="carousel-caption">
-                            <h4><%= link_to @articles_featured.first.title, show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %></h4>
-                            <p><%= @articles_featured.first.permalink %></p>
-                        </div>
-                    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="panel">
+					<div class="panel-body">
+						<div id="main-carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#main-carousel" data-slide-to="1" class></li>
+								<li data-target="#main-carousel" data-slide-to="2" class></li>
+								<li data-target="#main-carousel" data-slide-to="3" class></li>
+								<li data-target="#main-carousel" data-slide-to="4" class></li>
+							</ol>
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<%= link_to image_tag(@articles_featured.first.image.url(:carousel), :class => 'img-responsive'), show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+									<div class="carousel-caption">
+										<h4><%= link_to @articles_featured.first.title, show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %></h4>
+										<p><%= @articles_featured.first.permalink %></p>
+									</div>
+								</div>
 
-                    <% @articles_featured[1..-1].each_with_index do |article| %>
-                        <div class="item">
-                            <%= link_to image_tag(article.image.url(:carousel), :class => 'img-responsive'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
-                            <div class="carousel-caption">
-                                <h4><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %></h4>
-                                <p><%= article.permalink %></p>
-                            </div>
-                        </div>
-                    <% end %>
-                  </div>
-                  <!-- Carousel nav -->
-                  <a class="left carousel-control" href="#main-carousel" data-slide="prev">
-                    <span id="main-carousel-control" class="fa fa-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#main-carousel" data-slide="next">
-                    <span id="main-carousel-control" class="fa fa-chevron-right"></span>
-                  </a>
-                </div>
-          </div>
-        </div>
-    </div>
-  </div>
+								<% @articles_featured[1..-1].each_with_index do |article| %>
+								<div class="item">
+									<%= link_to image_tag(article.image.url(:carousel), :class => 'img-responsive'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+									<div class="carousel-caption">
+										<h4><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %></h4>
+										<p><%= article.permalink %></p>
+									</div>
+								</div>
+								<% end %>
+							</div>
+							<!-- Carousel nav -->
+							<a class="left carousel-control" href="#main-carousel" data-slide="prev">
+								<span id="main-carousel-control" class="fa fa-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#main-carousel" data-slide="next">
+								<span id="main-carousel-control" class="fa fa-chevron-right"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <% if mobile_device? %>
