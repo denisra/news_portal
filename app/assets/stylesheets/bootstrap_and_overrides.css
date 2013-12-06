@@ -45,6 +45,10 @@ body {
 
 #modal-comments {
     overflow: hidden;
+	margin-left: 25%;
+}
+#modal-comments > .modal-dialog {
+	width: 100%;
 }
 
 #article-thumbnail {
