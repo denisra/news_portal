@@ -162,6 +162,10 @@ body {
         height: 100px;
         width: 100px;
     }
+	.list-group-image {
+		width: 100px;
+		height: 100px;
+	}
 	#container-carousel {
 		margin-bottom: 10px;
 	}
