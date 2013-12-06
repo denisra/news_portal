@@ -153,25 +153,26 @@ body {
     .caption, .caption > h5, .caption > p, .caption > btn-group {
         font-size: 80%;
     }
-  /*  .thumbnail img {
+    .thumbnail img {
         max-height: 150px;
 
         max-width: 300px;
-    } */
+    }
     .media-object {
         height: 100px;
         width: 100px;
     }
-	.list-group-image {
-		width: 100px;
-		height: 100px;
-	}
 	#container-carousel {
 		margin-bottom: 10px;
 	}
 	.carousel-caption {
 		font-size: 80%;
 	}
+}
+
+#mobile-thumb-img {
+    height: 100px;
+    width: 100px;	
 }
 
 .item.list-group-item

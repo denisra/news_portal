@@ -4,7 +4,7 @@
           <div class="item col-xs-12 col-sm-6 col-md-4 list-group-item">
 
             <div class="thumbnail">
-              <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'group list-group-image'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
+              <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'group list-group-image', :id => 'mobile-thumb-img'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
               <div class="caption">
                 <h5 class="group inner list-group-item-heading"><%= article.title %> </h5>
 				<div class"group inner list-group-item-text">
