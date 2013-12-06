@@ -218,15 +218,13 @@ body {
 .list-group-item-text
 {
     margin: 0 0 11px;
+	margin-bottom: 4px;
 }
 .list-group-item-label {
 	margin-bottom: 2px;
 	margin-right: 2px;	
 }
-.list-group-item-p {
-	margin-top: 3px;
-	line-height: 21px;
-}
+
 
 
 /* Facebook */
