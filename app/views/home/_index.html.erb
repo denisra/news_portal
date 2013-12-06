@@ -1,6 +1,6 @@
 <div class="row">
   <% @articles.each do |article| %>
-      <div class="col-xs-6 col-sm-4 col-md-3">
+      <div class="col-xs-12 col-sm-6 col-md-3">
         <div id="article-thumbnail" class="thumbnail">
           <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article', :class => 'thumbnail'} %>
           <div class="caption">
@@ -17,7 +17,7 @@
             </div>
             <p> Clicks: <%= article.clicks %> </p>
             <hr style="margin:8px auto">
-            <div class="btn-group btn-group-lg">
+            <div class="btn-group btn-group-lg pull-left">
               <%= link_to '<i class="fa fa-comments-o fa-2x"></i>'.html_safe, comments_path(id: article.id), {:class => 'pull-left btn btn-default btn-responsive fb-comments', :remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-comments'} %>
               <%= link_to '<i class="fa fa-facebook-square fa-2x"></i>'.html_safe, 'https://www.facebook.com/sharer/sharer.php?u=' + show_url(id: article.id), :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;", :class => 'pull-left btn btn-default btn-responsive facebook-like' %>
 			  <%= link_to '<i class="fa fa fa-thumbs-up fa-2x" id="like-btn"></i>'.html_safe, 'https://www.facebook.com/plugins/like.php?href=' + show_url(id: article.id), {'data-action' => 'like', :class => 'pull-left btn btn-default btn-responsive facebook-like', :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;"} %>

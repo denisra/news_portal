@@ -49,11 +49,11 @@
 </div>
 
 <% if mobile_device? %>
-    <div class="container" id="mobile-articles">
+    <div class="container well" id="mobile-articles">
       <%= render :partial => 'mobile_index', :locals => {:articles => @articles} %>
     </div>
 <% else %>
-    <div class="container" id="main-articles">
+    <div class="container well" id="main-articles">
       <%= render :partial => 'index', :locals => {:articles => @articles} %>
     </div>
 <% end %>
