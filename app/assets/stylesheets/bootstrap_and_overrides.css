@@ -210,6 +210,8 @@ body {
 .item.list-group-item img
 {
     float: left;
+	width: 100px;
+	height: 100px;
 }
 .item.list-group-item:after
 {
