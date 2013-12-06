@@ -219,6 +219,10 @@ body {
 {
     margin: 0 0 11px;
 }
+.list-group-item-label {
+	margin-bottom: 2px;
+	margin-right: 2px;	
+}
 
 
 
