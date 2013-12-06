@@ -219,6 +219,7 @@ body {
 .item.list-group-item .list-group-item-text
 {
 	margin-bottom: 4px;
+	margin-top: 4px;
 }
 .list-group-item-text > i {
 	margin-left: 4px;
