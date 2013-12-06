@@ -185,6 +185,8 @@ body {
 .item.list-group-item .list-group-image
 {
     margin-right: 10px;
+	width: 100px;
+	height: 100px;
 }
 .item.list-group-item .thumbnail
 {
@@ -208,8 +210,6 @@ body {
 .item.list-group-item img
 {
     float: left;
-	width: 100px;
-	height: 100px;
 }
 .item.list-group-item:after
 {
