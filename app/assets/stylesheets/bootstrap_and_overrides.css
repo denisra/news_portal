@@ -155,7 +155,6 @@ body {
     }
     .thumbnail img {
         max-height: 150px;
-
         max-width: 300px;
     }
     .media-object {
@@ -168,11 +167,6 @@ body {
 	.carousel-caption {
 		font-size: 80%;
 	}
-}
-
-#mobile-thumb-img {
-    max-height: 100px;
-    max-width: 100px;	
 }
 
 .item.list-group-item
@@ -192,6 +186,7 @@ body {
     margin-right: 10px;
 	height: 100px;
 	width: 100px;
+	min-height: 100px;
 }
 .item.list-group-item .thumbnail
 {
