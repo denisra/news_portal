@@ -6,7 +6,7 @@
             <div class="thumbnail">
               <%= link_to image_tag(article.image.url(:thumb), data: {src: article.image.url(:thumb)}, :class => 'group list-group-image'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
               <div class="caption">
-                <strong><class="group inner list-group-item-heading"><%= article.title %> </strong>
+                <strong class="group inner list-group-item-heading"><%= article.title %> </strong>
 				<div class"group inner list-group-item-text">
                 	<span class="label label-primary list-group-item-label"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span> <i class="fa fa-clock-o icon-cx"> </i> <%= "há " + time_ago_in_words(article.published_at) %>
 				</div>
