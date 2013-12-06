@@ -6,7 +6,7 @@
             <div class="thumbnail">
               <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'group list-group-image'), show_path(id: article.id) %>
               <div class="caption">
-                <strong class="group inner list-group-item-heading"><%= article.title %> </strong>
+                <strong class="group inner list-group-item-heading"><%= link_to article.title, show_path(id: article.id) %> </strong>
 				<div class="group inner list-group-item-text">
                 	<span class="label label-primary list-group-item-label"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span> <i class="fa fa-clock-o"> </i> <%= "há " + time_ago_in_words(article.published_at) %>
 				</div>
