@@ -191,7 +191,7 @@ body {
 .item.list-group-item .thumbnail
 {
     margin-bottom: 0px;
-	min-height: 130px;
+	min-height: 120px;
 }
 .item.list-group-item .caption
 {
@@ -219,6 +219,9 @@ body {
 .item.list-group-item .list-group-item-text
 {
 	margin-bottom: 4px;
+}
+.list-group-item-text > i {
+	margin-left: 4px;
 }
 .list-group-item-label {
 	margin-bottom: 2px;

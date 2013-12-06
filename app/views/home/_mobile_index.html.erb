@@ -8,7 +8,7 @@
               <div class="caption">
                 <strong class="group inner list-group-item-heading"><%= article.title %> </strong>
 				<div class="group inner list-group-item-text">
-                	<span class="label label-primary list-group-item-label"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span> <i class="fa fa-clock-o icon-cx"> </i> <%= "há " + time_ago_in_words(article.published_at) %>
+                	<span class="label label-primary list-group-item-label"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span> <i class="fa fa-clock-o"> </i> <%= "há " + time_ago_in_words(article.published_at) %>
 				</div>
 
                   	  <% article.tag_list.each do |t| %>
