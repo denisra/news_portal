@@ -223,7 +223,10 @@ body {
 	margin-bottom: 2px;
 	margin-right: 2px;	
 }
-
+.list-group-item-p {
+	margin-top: 3px;
+	line-height: 21px;
+}
 
 
 /* Facebook */
