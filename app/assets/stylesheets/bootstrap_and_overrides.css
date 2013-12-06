@@ -171,8 +171,8 @@ body {
 }
 
 #mobile-thumb-img {
-    height: 100px;
-    width: 100px;	
+    max-height: 100px;
+    max-width: 100px;	
 }
 
 .item.list-group-item
@@ -190,10 +190,8 @@ body {
 .item.list-group-item .list-group-image
 {
     margin-right: 10px;
-}
-.list-group-image {
-	width: 100px;
 	height: 100px;
+	width: 100px;
 }
 .item.list-group-item .thumbnail
 {
