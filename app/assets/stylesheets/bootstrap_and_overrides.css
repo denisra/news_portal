@@ -185,6 +185,10 @@ body {
 	}
 }
 
+.list-group-item-heading {
+	font-size: 1em;
+	font-weight: bold;
+}
 .item.list-group-item
 {
     float: none;
