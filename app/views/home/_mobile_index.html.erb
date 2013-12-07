@@ -4,13 +4,15 @@
           <div class="item col-xs-12 col-sm-6 col-md-4 list-group-item">
 
             <div class="thumbnail">
+				<div class="col-6">
               <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'group list-group-image'), show_path(id: article.id) %>
+		  		</div>
+				<div class="col-6">
               <div class="caption">
                 <b class="group inner list-group-item-heading"><%= link_to article.title, show_path(id: article.id) %> </b>
 				<div class="group inner list-group-item-text">
                 	<span class="label label-primary list-group-item-label"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span> <i class="fa fa-clock-o"> </i> <%= "há " + time_ago_in_words(article.published_at) %>
 				</div>
-				<div class="col-12">
 
                   	  <% article.tag_list.each do |t| %>
                         <span class="pull-left label label-info list-group-item-label">
@@ -18,7 +20,6 @@
                         </span>
                   	  <% end %>
 				  </div>
-
 
               </div>
           </div>
