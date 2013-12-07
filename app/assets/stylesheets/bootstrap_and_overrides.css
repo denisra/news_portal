@@ -212,6 +212,7 @@ body {
 {
     margin-bottom: 0px;
 	min-height: 120px;
+	height: 100%;
 }
 .item.list-group-item .caption
 {
