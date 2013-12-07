@@ -8,7 +8,7 @@
               <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'group list-group-image pull-left'), show_path(id: article.id) %>
 		  		</div>
 				<div class="col-6">
-              <div class="caption pull-left">
+              <div class="caption">
                 <b class="group inner list-group-item-heading"><%= link_to article.title, show_path(id: article.id) %> </b>
 				<div class="group inner list-group-item-text">
                 	<span class="label label-primary list-group-item-label"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span> <i class="fa fa-clock-o"> </i> <%= "há " + time_ago_in_words(article.published_at) %>
