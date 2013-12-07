@@ -5,7 +5,7 @@
 
             <div class="thumbnail">
 				<div class="col-6">
-              <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'group list-group-image'), show_path(id: article.id) %>
+              <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => 'group list-group-image pull-left'), show_path(id: article.id) %>
 		  		</div>
 				<div class="col-6">
               <div class="caption pull-left">
