@@ -202,7 +202,7 @@ body {
     margin-right: 10px;
 	height: 100px;
 	width: 100px;
-	/*min-height: 100px;*/
+	min-height: 100px;
 }
 .item.list-group-item .thumbnail
 {
