@@ -10,11 +10,11 @@
  *
  *= require_self
  *= require_tree .
- *= require bootstrap.min
  *= require bootstrap-datepicker
  *= require bootstrap_and_overrides
  *= require font-awesome.min
  *= require typeahead
+ *= require bootstrap.min
  */
 
 
