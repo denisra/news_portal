@@ -278,6 +278,10 @@ body {
 	max-height: 2.5em;	
 }
 
+.tags-wrapper {
+	max-height: 2.6em;
+}
+
 .navbar-custom > .container {
 	background-color: #4c66a4;
 	border: 1px solid #3E5DA7;
