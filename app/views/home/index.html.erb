@@ -50,6 +50,7 @@
 		<%= image_tag("http://placehold.it/300x250", :class => 'pull-left img-responsive') %>
 </div>
 <div class="col-lg-8 col-md-8">
+
 <% if mobile_device? %>
     <div class="container well" id="mobile-articles">
       <%= render :partial => 'mobile_index', :locals => {:articles => @articles} %>
@@ -61,9 +62,10 @@
 <% end %>
 
 <%= link_to 'Mais Notícias', noticias_path(:page => @articles.next_page), :class => 'load-more-articles', :remote => true if @articles.next_page %>
+
 </div>
 <div class="col-lg-2 col-md-2 visible-lg visible-md">
-	
+		
 </div>
 
 
