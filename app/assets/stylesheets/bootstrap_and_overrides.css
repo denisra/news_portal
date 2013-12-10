@@ -280,6 +280,7 @@ body {
 
 .tags-wrapper {
 	max-height: 2.6em;
+	overflow: hidden;
 }
 
 .navbar-custom > .container {
