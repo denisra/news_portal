@@ -177,10 +177,7 @@ body {
         max-height: 150px;
         max-width: 300px;
     }
-    .media-object {
-        height: 100px;
-        width: 100px;
-    }
+
 	#container-carousel {
 		margin-bottom: 10px;
 	}
@@ -188,7 +185,8 @@ body {
 		font-size: 1em;
 	}
 	#main-carousel{
-	    max-height: 200px;
+	    max-height: 22em;
+		max-width: 65em;
 	    margin: 0 auto;
 	}
 
