@@ -234,14 +234,14 @@ body {
 .item.list-group-item .thumbnail
 {
     margin-bottom: 0px;
-	min-height: 120px;
+	min-height: 8em;
 	height: 100%;
 	background-color: transparent;
 	border: none;
 }
 .item.list-group-item .caption
 {
-    padding: 9px 9px 0px 9px;
+    padding: 0.2em;
 	margin-left: 100px;
 }
 .item.list-group-item:nth-of-type(odd)
