@@ -139,9 +139,15 @@ body {
 #main-carousel a:hover{
     color: #9f9f9f;
 }
-#main-carousel-control {
+#left-carousel-control {
     top: 50%;
     left: 50%;
+    position: absolute;
+}
+
+#right-carousel-control {
+    top: 50%;
+    right: 50%;
     position: absolute;
 }
 
@@ -191,7 +197,7 @@ body {
 
 	#main-carousel{
 	    height: 15em;
-		width: 65em;
+		max-width: 65em;
 	    margin: 0 auto;
 	}
 
