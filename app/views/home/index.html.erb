@@ -19,7 +19,6 @@
 									<%= link_to image_tag(@articles_featured.first.image.url(:carousel), :class => 'img-responsive'), show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
 									<div class="carousel-caption">
 										<h4><%= link_to @articles_featured.first.title, show_path(id: @articles_featured.first.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %></h4>
-										<p><%= @articles_featured.first.permalink %></p>
 									</div>
 								</div>
 
@@ -28,7 +27,6 @@
 									<%= link_to image_tag(article.image.url(:carousel), :class => 'img-responsive'), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %>
 									<div class="carousel-caption">
 										<h4><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article'} %></h4>
-										<p><%= article.permalink %></p>
 									</div>
 								</div>
 								<% end %>
