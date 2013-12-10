@@ -58,23 +58,18 @@ body {
 
 
 #article-thumbnail {
-  margin-bottom: 20px;
-  height: 530px;
+  margin-bottom: 1em;
+  height: 41em;
   border: groove;
   position:relative;
   overflow:hidden;
 }
 
-#article-thumbnail > a {
-    margin-bottom: 5px;
-}
 
-/*GROW*/
 
 .thumbnail img {
-  max-height: 200px;
-  min-height: 200px;
-  max-width: 300px;
+  height: 11em;
+  max-width: 17em;
   overflow: hidden;
   -webkit-box-shadow: 5px 5px 5px #111;
           box-shadow: 5px 5px 5px #111;
@@ -88,8 +83,7 @@ body {
 
 
 .caption > p {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0.6em;
 }
 
 .caption > strong > a, .caption > strong > a:hover, .caption > strong > a:visited {
@@ -180,19 +174,8 @@ body {
 
 @media (max-width: 768px) {
 
-    #article-thumbnail {
-        height: 400px;
-    }
-    .caption, .caption > h5, .caption > p, .caption > .btn-group-wrap > .btn-group {
-        font-size: 1em;
-    }
-    .thumbnail img {
-        max-height: 150px;
-        max-width: 300px;
-    }
-
 	#container-carousel {
-		margin-bottom: 10px;
+		margin-bottom: 1em;
 	}
 
 	#main-carousel{
