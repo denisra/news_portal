@@ -18,7 +18,7 @@
             </div>
             <p> Clicks: <%= article.clicks %> </p>
             <hr style="margin:0.4em auto">
-			<div class="btn-group-wrap">
+			<div class="btn-group-wrap" id="share-buttons">
 				<div class="btn-group btn-group-lg">
 					<%= link_to '<i class="fa fa-comments-o fa-2x"></i>'.html_safe, comments_path(id: article.id), {:class => 'pull-left btn btn-default btn-responsive fb-comments', :remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-comments'} %>
 					<%= link_to '<i class="fa fa-facebook-square fa-2x"></i>'.html_safe, 'https://www.facebook.com/sharer/sharer.php?u=' + show_url(id: article.id), :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;", :class => 'pull-left btn btn-default btn-responsive facebook-like' %>
