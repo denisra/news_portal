@@ -4,11 +4,11 @@
 </div>
 
 <% if mobile_device? %>
-    <div class="container" id="mobile-articles">
+    <div class="container well" id="mobile-articles">
         <%= render :partial => 'mobile_index', :locals => {:articles => @articles} %>
     </div>
 <% else %>
-    <div class="container" id="main-articles">
+    <div class="container well full-container" id="main-articles">
         <%= render :partial => 'index', :locals => {:articles => @articles} %>
     </div>
 <% end %>
@@ -28,7 +28,7 @@
       <div class="modal-body">
       </div>
       <div class="modal-footer">
-        <a href="#" class="btn" data-dismiss="modal">Fechar</a>
+        <a href="#" class="btn btn-default" data-dismiss="modal">Fechar</a>
       </div>
      </div>
     </div>
@@ -47,7 +47,7 @@
 
       </div>
       <div class="modal-footer">
-        <a href="#" class="btn" data-dismiss="modal">Fechar</a>
+        <a href="#" class="btn btn-default" data-dismiss="modal">Fechar</a>
       </div>
      </div>
     </div>

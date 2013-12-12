@@ -13,6 +13,10 @@ body {
   background-color: #ffffff;
 }
 
+.full-container {
+	width: 100%;
+}
+
 
 
 .icon-cx {
@@ -161,12 +165,14 @@ body {
 	font-size: 1em;
 }
 
-.caption > .btn-group-wrap > .btn-group {
+/*.caption > .btn-group-wrap > .btn-group {
     bottom: 10px;
     position: absolute;
-}
+}*/
 
 .btn-group-wrap {
+	position: absolute;
+	bottom: 1em;
 	text-align: center;
 	display: inline;
 }

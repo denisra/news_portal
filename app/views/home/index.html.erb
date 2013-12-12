@@ -45,18 +45,17 @@
 		</div>
 	</div>
 </div>
-<div class="col-lg-2 col-md-2 visible-lg visible-md">
-		<%= image_tag("http://placehold.it/300x250", :class => 'pull-left img-responsive') %>
-		<%= image_tag("http://placehold.it/300x250", :class => 'pull-left img-responsive') %>
+<div class="col-lg-2 col-md-1 visible-lg visible-md">
+	<div class="fb-like-box" data-href="https://www.facebook.com/casadojpx" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>	
 </div>
-<div class="col-lg-8 col-md-8">
+<div class="col-lg-8 col-md-10">
 
 <% if mobile_device? %>
     <div class="container well" id="mobile-articles">
       <%= render :partial => 'mobile_index', :locals => {:articles => @articles} %>
     </div>
 <% else %>
-    <div class="container well" id="main-articles">
+    <div class="container well full-container" id="main-articles">
       <%= render :partial => 'index', :locals => {:articles => @articles} %>
     </div>
 <% end %>
@@ -64,43 +63,12 @@
 <%= link_to 'Mais Notícias', noticias_path(:page => @articles.next_page), :class => 'load-more-articles', :remote => true if @articles.next_page %>
 
 </div>
-<div class="col-lg-2 col-md-2 visible-lg visible-md">
-		
+
+<div class="col-lg-2 col-md-1 visible-lg visible-md">
+	<%= image_tag("http://placehold.it/300x250", :class => 'pull-right img-responsive') %>
+	<%= image_tag("http://placehold.it/300x250", :class => 'pull-right img-responsive') %>		
 </div>
 
 
-<div id="modal-comments" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div id="modal-comments-content" class="modal-content">
-      <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3 class="modal-heading"></h3>
-    </div>
-      <div class="modal-body">
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="btn btn-default" data-dismiss="modal">Fechar</a>
-      </div>
-     </div>
-    </div>
-</div>
-
-
-
-<div id="modal-article" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div id="modal-article-content" class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-heading"></h3>
-      </div>
-      <div class="modal-body">
-
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="btn btn-default" data-dismiss="modal">Fechar</a>
-      </div>
-     </div>
-    </div>
-</div>
+	
 
