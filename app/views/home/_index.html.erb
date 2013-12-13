@@ -1,10 +1,11 @@
 <div class="row">
   <% @articles.each do |article| %>
       <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+		  <span class="thermometer">20&deg;C</span>
         <div id="article-thumbnail" class="thumbnail">
           <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => "img-responsive"), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article', :class => 'thumbnail'} %>
           <div class="caption">
-            <strong><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article' } %> </strong>
+            <b class="list-group-item-heading"><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article' } %> </b>
 			<p></p>
             <span class="label label-primary"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span>
             <p> <i class="pull-left fa fa-clock-o icon-cx"> </i> <%= "há " + time_ago_in_words(article.published_at) %> </p>
@@ -18,6 +19,7 @@
             </div>
             <p> Clicks: <%= article.clicks %> </p>
             <hr style="margin:0.4em auto">
+		</div>
 			<div class="btn-group-wrap" id="share-buttons">
 				<div class="btn-group btn-group-lg">
 					<%= link_to '<i class="fa fa-comments-o fa-2x"></i>'.html_safe, comments_path(id: article.id), {:class => 'pull-left btn btn-default btn-responsive fb-comments', :remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-comments'} %>
@@ -27,7 +29,7 @@
 					<%= link_to '<i class="fa fa fa-google-plus-square fa-2x"></i>'.html_safe, 'https://plus.google.com/share?url=' + show_url(id: article.id), {:class => 'pull-left btn btn-default btn-responsive google-plus', 'data-lang' => 'pt', :onclick => "javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"} %>
 				</div>
 		</div>
-          </div>
+          
         </div>
       </div>
   <% end %>
