@@ -68,6 +68,8 @@ body {
   position:relative;
   overflow:hidden;
   background-color: #E6E6FA;
+  min-width: 14em;
+  max-width: 20em;
 }
 
 .caption > hr {
