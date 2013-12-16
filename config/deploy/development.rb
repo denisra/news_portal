@@ -1,6 +1,15 @@
+set :application, 'portal'
 set :stage, :development
 set :rails_env, 'development'
 
+set :deploy_to, '/home/denisra/webapps/portal'
+ 
+ 
+set :default_env, {
+        "PATH"      =>  "#{deploy_to}/bin:$PATH",
+        "GEM_HOME"  =>  "#{deploy_to}/gems",
+        "RAILS_ENV" =>  "development"
+}
 
 # Simple Role Syntax
 # ==================

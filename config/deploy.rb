@@ -1,10 +1,10 @@
-set :application, 'portal'
+
 set :repo_url, 'git@bitbucket.org:denisra/news_portal.git'
 set :branch, "bootstrap3"
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
- set :deploy_to, '/home/denisra/webapps/portal'
+
  set :scm, :git
 
  set :format, :pretty
@@ -22,11 +22,7 @@ set :tmp_dir, "#{deploy_to}/tmp"
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
- set :default_env, {
-        "PATH"      =>  "#{deploy_to}/bin:$PATH",
-        "GEM_HOME"  =>  "#{deploy_to}/gems",
-        "RAILS_ENV" =>  "development"
-}
+
 
  set :keep_releases, 5
 
