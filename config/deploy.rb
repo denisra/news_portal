@@ -11,14 +11,11 @@ set :branch, "bootstrap3"
  set :log_level, :debug
  set :pty, true
 
-# bundler settings:
- set :bundle_without, %w{production test}.join(' ')
-
-
+ 
 
 # set :linked_files, %w{config/database.yml}
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-set :tmp_dir, "#{deploy_to}/tmp"
+
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 

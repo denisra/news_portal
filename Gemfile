@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development]
@@ -48,6 +48,8 @@ gem 'jquery-turbolinks'
 #gem 'omniauth-facebook'
 
 gem 'rails-i18n', '~> 4.0.0'
+gem 'execjs'
+gem 'therubyracer'
 
 
 # Use ActiveModel has_secure_password
@@ -67,9 +69,10 @@ gem 'debugger', group: [:development, :test]
 gem "better_errors", group: [:development, :test]
 gem 'binding_of_caller', group: [:development, :test]
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
-gem 'aws-sdk'
+#gem 'aws-sdk'
 
-#group :production do
+group :production do
+  gem 'mysql2'
 #  gem 'pg', '0.15.1'
 #  gem 'rails_12factor', '0.0.2'
-#end
+end

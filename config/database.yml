@@ -19,8 +19,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
+  adapter: mysql2
   database: news_portal
   pool: 5
   timeout: 5000
-  password:
+  username: denisra
+  password: Ilike2playpoker

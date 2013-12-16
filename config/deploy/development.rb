@@ -3,6 +3,7 @@ set :stage, :development
 set :rails_env, 'development'
 
 set :deploy_to, '/home/denisra/webapps/portal'
+set :tmp_dir, "#{deploy_to}/tmp"
  
  
 set :default_env, {
@@ -10,6 +11,9 @@ set :default_env, {
         "GEM_HOME"  =>  "#{deploy_to}/gems",
         "RAILS_ENV" =>  "development"
 }
+
+# bundler settings:
+ set :bundle_without, %w{production test}.join(' ')
 
 # Simple Role Syntax
 # ==================
