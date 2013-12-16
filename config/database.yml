@@ -19,8 +19,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   database: news_portal
+  host: localhost
   pool: 5
   timeout: 5000
   username: denisra

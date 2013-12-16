@@ -118,12 +118,12 @@ GEM
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.8.2)
-    mysql2 (0.3.14)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    pg (0.15.1)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -231,9 +231,9 @@ DEPENDENCIES
   jbuilder (~> 1.5.2)
   jquery-rails (~> 3.0.4)
   jquery-turbolinks
-  mysql2
   nokogiri (~> 1.6.0)
   paperclip!
+  pg (= 0.15.1)
   rails (= 4.0.2)
   rails-i18n (~> 4.0.0)
   sass-rails (~> 4.0.1)
