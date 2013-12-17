@@ -19,4 +19,4 @@ Ignore article images
 /public/system/articles
 
 #ignore bin dir
-/bin
+#/bin
