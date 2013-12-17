@@ -2,7 +2,7 @@ set :application, 'portal'
 set :stage, :production
 set :rails_env, 'production'
 
-set :deploy_to, '/home/denisra/webapps/news_portal'
+set :deploy_to, '/home/denisra/webapps/prod'
 set :tmp_dir, "#{deploy_to}/tmp"
  
  
