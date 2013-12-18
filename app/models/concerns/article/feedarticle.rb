@@ -148,7 +148,7 @@
 				#entries.each do |entry|
 				  	unless exists? :permalink => entry.url
 				    	create(			
-							:title 	=>	entry.title.sanitize,
+							:title 	=>	entry.title.sanitize.squish,
 							:permalink 	=>	entry.url,
 							:content	=>	entry.summary,
 							:source 	=>	entry.author,
