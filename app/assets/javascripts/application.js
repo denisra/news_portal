@@ -17,9 +17,9 @@
 //= require bootstrap.min
 //= require typeahead.min
 //= require jquery.inview.min
-//= require_tree .
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR
 //= require facebook
+//= require_tree .
 //= require turbolinks
 
