@@ -16,11 +16,11 @@
             end
 			    	e.image = parse_feed_img(page, source)
             logger.info "Image URL: '#{e.image}'"
-			    	if e.image != nil
+			    	if e.image != nil && e.image != ''
 			    		e.categories = parse_tags(page, source)
 			    		e.author = parse_author(page, source)
               if e.published == nil
-                e.published = get_published_date(page, source, e)
+                e.published= get_published_date(page, source, e)
               end
               logger.info "Article published date: '#{e.published}'"
 			    		entries << e
@@ -71,10 +71,10 @@
 
       def self.get_published_date(page, source, entry)
           published_date = page.xpath('//abbr[contains(@class, "published")]/@time').to_s
-          if published_date == nil
+          if published_date == nil || published_date == ''
             published_date = Time.now.to_s
+          end
           published_date
-        end
       end
 
 
@@ -93,6 +93,8 @@
           end
         elsif source == 'EGO'
           image =  page.xpath('//div[contains(@class, "foto")]/img/@src').first.to_s
+          if image == nil || image == ''
+            image = page.xpath('//meta[contains(@property, "og:image")]/@content').first.to_s
 				else
 					image = page.xpath('//meta[contains(@property, "og:image")]/@content').first.to_s
 					if image.size > 0
