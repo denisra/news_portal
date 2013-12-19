@@ -95,6 +95,7 @@
           image =  page.xpath('//div[contains(@class, "foto")]/img/@src').first.to_s
           if image == nil || image == ''
             image = page.xpath('//meta[contains(@property, "og:image")]/@content').first.to_s
+          end
 				else
 					image = page.xpath('//meta[contains(@property, "og:image")]/@content').first.to_s
 					if image.size > 0
