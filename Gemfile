@@ -6,7 +6,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: [:development]
+# gem 'sqlite3', group: [:development]
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
@@ -64,10 +64,13 @@ gem 'therubyracer'
  gem 'capistrano-rails'
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+group :development do
+  gem 'sqlite3'
+  gem 'debugger'
+  gem "better_errors"
+  gem 'binding_of_caller'
+end
 
-gem "better_errors", group: [:development, :test]
-gem 'binding_of_caller', group: [:development, :test]
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 #gem 'aws-sdk'
 
