@@ -201,12 +201,16 @@ body {
 }
 
 .btn-group-wrap-show {
-	/* position: absolute; */
 	text-align: left;
 	display: inline;
 	width: 100%;
 	top: 7em;
 	
+}
+
+.btn-share-show {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 
