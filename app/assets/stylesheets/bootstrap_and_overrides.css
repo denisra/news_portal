@@ -200,6 +200,15 @@ body {
 	width: 100%;
 }
 
+.btn-group-wrap-show {
+	/* position: absolute; */
+	text-align: left;
+	display: inline;
+	width: 100%;
+	top: 7em;
+	
+}
+
 
 @media (max-width: 768px) {
 
