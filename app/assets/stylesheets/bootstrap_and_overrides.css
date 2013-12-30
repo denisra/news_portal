@@ -201,10 +201,11 @@ body {
 }
 
 .btn-group-wrap-show {
-	text-align: left;
+	text-align: center;
 	display: inline;
 	width: 100%;
-	top: 7em;
+	top: 4em;
+	position: fixed;
 	
 }
 
