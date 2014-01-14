@@ -62,6 +62,7 @@ gem 'therubyracer'
  gem 'capistrano'
  gem 'capistrano-bundler'
  gem 'capistrano-rails'
+ gem 'capistrano-rvm'
 
 # Use debugger
 group :development do

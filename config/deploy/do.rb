@@ -2,12 +2,14 @@ set :application, 'portal'
 set :stage, :production
 set :rails_env, 'production'
 
-set :deploy_to, '/home/portal'
+set :deploy_to, '/home/rails/portal'
 set :tmp_dir, "#{deploy_to}/tmp"
+set :use_sudo, true
  
  
 set :default_env, {
-#        "PATH"      =>  "#{deploy_to}/bin:$PATH",
+        "PATH"      =>  "/home/rails/bin:$PATH",
+        "rvm_bin_path" => "~/.rvm/bin",
 #        "GEM_HOME"  =>  "#{deploy_to}/gems",
         "RAILS_ENV" =>  "production"
 }
@@ -30,7 +32,7 @@ role :db,  "162.243.218.136"
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-  server '162.243.218.136', user: 'denis', roles: %w{web app db} #, my_property: :my_value
+  server '162.243.218.136', user: 'root', roles: %w{web app db} #, my_property: :my_value
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options

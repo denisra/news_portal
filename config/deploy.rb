@@ -10,6 +10,7 @@ set :branch, "bootstrap3"
  set :format, :pretty
  set :log_level, :debug
  set :pty, true
+ set :use_sudo, true
 
  
 
@@ -31,7 +32,8 @@ namespace :deploy do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
-      execute "#{deploy_to}/bin/restart"
+      #execute "#{deploy_to}/bin/restart"
+      execute "/etc/init.d/unicorn restart"
     end
   end
 
