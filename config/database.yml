@@ -26,4 +26,4 @@ production:
   pool: 5
   timeout: 5000
   username: rails
-  password: EvoZ4TYqpJ
+  password: EvoZ4TYgpJ
