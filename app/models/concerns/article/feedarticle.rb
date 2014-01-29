@@ -151,7 +151,7 @@
 				    	create(			
 							:title 	=>	entry.title.sanitize.squish,
 							:permalink 	=>	entry.url,
-							:content	=>	entry.summary,
+							#:content	=>	entry.summary,
 							:source 	=>	entry.author,
 							:published_at 	=>	entry.published,
 							:image	=>	entry.image,

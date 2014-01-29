@@ -64,8 +64,10 @@
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  <ul class="nav navbar-nav">
 				  <li><%= link_to "Home", root_path, class: "active"  %></li>
-				  <li><%= link_to "Link2", "/path2"  %></li>
-				  <li><%= link_to "Link3", "/path3"  %></li>
+				  <li><%= link_to "Ego", "/tags/ego"  %></li>
+				  <li><%= link_to "iG Gente", "/tags/gente"  %></li>
+				  <li><%= link_to "O Fuxico", "/tags/ofuxico"  %></li>
+				  <li><%= link_to "Portal Virgula", "/tags/portal-virgula"  %></li>
 			  </ul>
 			  <%= form_tag(noticias_path, method: "get", class: "navbar-form navbar-right", role:"search") do %>
 			  <%= text_field_tag(:query, params[:query], id: "article_search", placeholder: "Busca", autocomplete: false) %>

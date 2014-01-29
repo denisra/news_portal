@@ -3,12 +3,13 @@
       <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
 		  <span class="thermometer">20&deg;C</span>
         <div id="article-thumbnail" class="thumbnail">
-          <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => "img-responsive"), show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article', :class => 'thumbnail'} %>
+          <%= link_to image_tag(article.image.url(:medium), data: {src: article.image.url(:medium)}, :class => "img-responsive"), show_path(id: article.id), {:class => 'thumbnail'} %>
           <div class="caption">
-            <b class="list-group-item-heading"><%= link_to article.title, show_path(id: article.id), {:remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-article' } %> </b>
+            <b class="list-group-item-heading"><%= link_to article.title, show_path(id: article.id) %> </b>
 			<p></p>
             <span class="label label-primary"><%= link_to article.site_list.first.titleize, tag_path(article.site_list.first) %> </span>
             <p> <i class="pull-left fa fa-clock-o icon-cx"> </i> <%= "há " + time_ago_in_words(article.published_at) %> </p>
+			<p> <i class="pull-left fa fa-eye icon-cx"></i> <%= article.clicks %> Visualizações</p>
             <hr style="margin:8px auto">
             <div class="clearfix" id="tags">
               <% article.tag_list.each do |t| %>
@@ -17,7 +18,7 @@
                         </span>
               <% end %>
             </div>
-            <p> Clicks: <%= article.clicks %> </p>
+            
             <hr style="margin:0.4em auto">
 		</div>
 			<div class="btn-group-wrap" id="share-buttons">

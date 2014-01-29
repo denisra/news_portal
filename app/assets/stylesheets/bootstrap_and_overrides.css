@@ -21,6 +21,7 @@ body {
 
 .icon-cx {
   font-size: 1.5em;
+  color:#3b5998;
 }
 .icon-cx.icon-border {
   border-width: 2.5px;
@@ -214,6 +215,17 @@ body {
 	margin-bottom: 1em;
 }
 
+#v-btn-group-share {
+	position: fixed;
+	top: 40%;
+	width: 4em;
+}
+
+#if {
+	height: 100%;
+	margin-top: 1em;
+	width: 102%;
+}
 
 @media (max-width: 768px) {
 
