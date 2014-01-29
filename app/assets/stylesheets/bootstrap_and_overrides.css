@@ -218,8 +218,14 @@ body {
 #v-btn-group-share {
 	position: fixed;
 	top: 40%;
-	right: 0.1em;
+	left: 0.1em;
 	width: 4em;
+}
+
+#m-btn-group-share {
+	position: fixed;
+	bottom: 0.1em;
+	left: 43%;
 }
 
 #if {

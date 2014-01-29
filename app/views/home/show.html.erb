@@ -1,28 +1,11 @@
-	<div class="btn-group btn-group-vertical" id="v-btn-group-share">
-		<%= link_to '<i class="fa fa-comments-o fa-2x"></i>'.html_safe, comments_path(id: @article.id), {:class => 'pull-left btn btn-default btn-responsive fb-comments', :remote => true, 'data-toggle' => "modal", 'data-target' => '#modal-comments'} %>
-		<%= link_to '<i class="fa fa-facebook-square fa-2x"></i>'.html_safe, 'https://www.facebook.com/sharer/sharer.php?u=' + show_url(id: @article.id), :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;", :class => 'pull-left btn btn-default btn-responsive facebook-like' %>
-		<%= link_to '<i class="fa fa fa-thumbs-up fa-2x" id="like-btn"></i>'.html_safe, 'https://www.facebook.com/plugins/like.php?href=' + show_url(id: @article.id), {'data-action' => 'like', :class => 'pull-left btn btn-default btn-responsive facebook-like', :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no')})(this); return false;"} %>
-		<%= link_to '<i class="fa fa fa-twitter-square fa-2x"></i>'.html_safe, 'https://twitter.com/share?url=' + show_url(id: @article.id), {:class => 'pull-left btn btn-default btn-responsive twitter', 'data-lang' => 'pt', :onclick => "javascript:(function(ele) { window.open(ele.href, ele.title, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,height=440px,width=500px')})(this); return false;"} %>
-		<%= link_to '<i class="fa fa fa-google-plus-square fa-2x"></i>'.html_safe, 'https://plus.google.com/share?url=' + show_url(id: @article.id), {:class => 'pull-left btn btn-default btn-responsive google-plus', 'data-lang' => 'pt', :onclick => "javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"} %>
-	</div>
-<div class="container" id="if">
 
-
-<iframe width="100%" height="100%" frameborder="0" allowtransparency="true" src="<%= @article.permalink %>" ></iframe>
-
-<div id="modal-comments" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div id="modal-comments-content" class="modal-content">
-      <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3 class="modal-heading"></h3>
+<% if mobile_device? %>
+    <div class="container well" id="mobile-articles">
+      <%= render :partial => 'mobile_show', :locals => {:articles => @articles} %>
     </div>
-      <div class="modal-body">
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="btn btn-default" data-dismiss="modal">Fechar</a>
-      </div>
-     </div>
+<% else %>
+    <div class="container well full-container" id="main-articles">
+      <%= render :partial => 'show', :locals => {:articles => @articles} %>
     </div>
-</div>
-</div>
+<% end %>
+
