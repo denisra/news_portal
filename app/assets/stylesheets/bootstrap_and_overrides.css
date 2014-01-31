@@ -239,13 +239,15 @@ body {
 	margin-top: 1em;
 	width: 100%;
 	overflow: hidden;
+	position: fixed;
+	z-index: -5;
 }
 
 #m_if {
 	height: 100%;
 	margin-top: 1em;
 	width: 100%;
-	overflow: hidden;	
+	overflow:hidden;	
 }
 
 @media (max-width: 768px) {

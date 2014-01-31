@@ -7,8 +7,7 @@
 		<%= link_to '<i class="fa fa fa-google-plus-square fa-2x"></i>'.html_safe, 'https://plus.google.com/share?url=' + show_url(id: @article.id), {:class => 'pull-left btn btn-default btn-responsive google-plus', 'data-lang' => 'pt', :onclick => "javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"} %>
 	</div>
 
-<div class="container m-full-container">
-<div class="container full-container" id="m_if">
+
+<div class="container m-full-container" id="if">
 	<iframe width="100%" height="100%" frameborder="0" allowtransparency="true" src="<%= @article.permalink %>" ></iframe>
-</div>
 </div>
