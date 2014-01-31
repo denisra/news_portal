@@ -20,7 +20,7 @@ body {
 .m-full-container{
 	width: 100%;
 	padding-left: 0.1em;
-	padding-right: 0.1em;
+	padding-right: 2em;
 }
 
 
@@ -230,8 +230,8 @@ body {
 
 #m-btn-group-share {
 	position: fixed;
-	bottom: 0.1em;
-	left: 0.3em;
+	bottom: 2em;
+	left: 4.5em;
 }
 
 #if {
@@ -247,7 +247,8 @@ body {
 	height: 100%;
 	margin-top: 1em;
 	width: 100%;
-	overflow:hidden;	
+	overflow:hidden;
+	z-index: -5;	
 }
 
 @media (max-width: 768px) {
