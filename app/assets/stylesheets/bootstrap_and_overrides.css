@@ -23,7 +23,9 @@ body {
 	padding-right: 2em;
 }
 
-
+.m-container-wrapper {
+	position: fixed;
+}
 
 .icon-cx {
   font-size: 1.5em;
